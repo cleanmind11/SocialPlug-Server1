@@ -42,43 +42,11 @@
         }
       }
     },
-    "main_img": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "chapter": {
       "displayName": "chapter",
       "type": "component",
       "repeatable": true,
       "component": "article.chapter",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "author_avatar": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -107,6 +75,22 @@
       "relation": "manyToMany",
       "target": "api::subservice.subservice",
       "mappedBy": "article"
+    },
+    "img": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "author_avatar": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

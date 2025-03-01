@@ -359,7 +359,7 @@ export interface SubserviceSubBenefit extends Struct.ComponentSchema {
   attributes: {
     Button: Schema.Attribute.String;
     button_api: Schema.Attribute.Text;
-    img: Schema.Attribute.Text;
+    img: Schema.Attribute.Text & Schema.Attribute.Required;
     paragraph: Schema.Attribute.Component<'general.list', true>;
     tabname: Schema.Attribute.String & Schema.Attribute.Required;
     title: Schema.Attribute.Component<'general.list', false>;
@@ -376,7 +376,7 @@ export interface SubserviceSubBlog extends Struct.ComponentSchema {
   attributes: {
     button: Schema.Attribute.String;
     button_api: Schema.Attribute.String;
-    img: Schema.Attribute.Text;
+    img: Schema.Attribute.Text & Schema.Attribute.Required;
     paragraph: Schema.Attribute.Component<'general.list', true>;
     title: Schema.Attribute.Component<'general.list', false>;
   };

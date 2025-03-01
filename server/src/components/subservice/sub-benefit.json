@@ -28,7 +28,8 @@
       "component": "general.list"
     },
     "img": {
-      "type": "text"
+      "type": "text",
+      "required": true
     }
   }
 }

@@ -167,6 +167,7 @@ export interface SubserviceBlogs extends Struct.ComponentSchema {
   };
   attributes: {
     Blog: Schema.Attribute.Component<'subservice.sub-blog', true>;
+    title: Schema.Attribute.Component<'general.list', false>;
   };
 }
 
@@ -421,6 +422,7 @@ export interface SubserviceSubserviceIntroduction
       false
     >;
     Summary: Schema.Attribute.Component<'subservice.service-summary', false>;
+    Summary2: Schema.Attribute.Component<'subservice.service-summary', false>;
     TopReviews: Schema.Attribute.Component<'subservice.top-reviews', false>;
     UpBlogs: Schema.Attribute.Component<'subservice.blogs', false>;
     video: Schema.Attribute.Text;

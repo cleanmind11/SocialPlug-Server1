@@ -615,6 +615,12 @@ export interface ApiSubserviceSubservice extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     introduction: Schema.Attribute.Component<
       'subservice.subservice-introduction',
       false
